@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Proje.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link rel="stylesheet" type="text/css" href="daleri-single.css" title="Daleri Single" media="screen,projection" />
+	<title>Proje</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="wrap">
+	<h1><a href="Default.aspx">Ziyaretçi Defteri</a></h1>
+	<p class="slogan">Slogan Alanı</p>
+    
+	<p class="toptabs">
+	<strong class="hide">Main menu:</strong>
+	<a class="toptab active" href="Default.aspx">Anasayfa</a><span class="hide"> | </span>
+	<a class="toptab " href="yenimesaj.aspx">Mesaj Yaz</a><span class="hide"> | </span>
+	<a class="toptab " href="yonetim.aspx">Yönetim</a><span class="hide"> | </span>
+	</p>
+
+	<div id="maincontent">
+		<h2>Ziyaretçi Defteri<a href="#"> V1</a></h2>
+	<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	</div>
+
+	<p class="footer">Copyright &copy; 2012 <a href="Default.aspx">Sinan Çakır</a><br />
+    </div>
+
+</body>
+</html>
